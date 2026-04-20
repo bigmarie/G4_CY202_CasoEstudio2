@@ -19,6 +19,8 @@ class GuardadoArchivos():
         timestamp = datetime.now().strftime("%Y-%m-%d %H-%M-%S")
         # Ruta archivos
         ruta_reporte = os.path.join(self.carpeta_Reportes, f"reporte_{timestamp}.txt")
-        print(texto) # Muestra en terminal
+        # Agregar fecha y hora al inicio del texto del reporte
+        texto_completo = f"Fecha y hora de generación: {timestamp}\n\n{texto}"
+        print(texto_completo)  # Muestra en terminal
         with open(ruta_reporte, "a", encoding="utf-8") as archivo:
-            archivo.write(texto + "\n") # Guarda en el .txt
+            archivo.write(texto_completo + "\n")  # Guarda en el .txt

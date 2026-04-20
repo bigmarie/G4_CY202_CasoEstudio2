@@ -1,0 +1,22 @@
+# Carpetas de caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de entorno virtual
+venv/
+env/
+ENV/
+
+# Reportes generados
+reportes_sistema/
+
+# Archivos del IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
