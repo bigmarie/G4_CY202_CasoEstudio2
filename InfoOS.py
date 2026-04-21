@@ -1,3 +1,12 @@
+"""InfoOS module
+
+Recopila información del sistema operativo y hardware usando platform y la guarda
+utilizando la utilidad GuardadoArchivos del paquete utils.
+
+Función principal:
+- info_sistema(): recaba datos sobre OS, versión, arquitectura y procesador y los
+  escribe en el sistema de guardado de reportes.
+"""
 import platform, psutil, subprocess, os
 from datetime import datetime
 from utils.guardado_archivos import GuardadoArchivos

@@ -1,3 +1,14 @@
+"""MonRecursos module
+
+Proporciona funciones para recopilar métricas del sistema (CPU, memoria, disco),
+conexiones de red y listado de procesos en ejecución. Usa psutil para obtener
+esta información y la acumula en una cadena que luego se guarda mediante
+GuardadoArchivos.
+
+Función principal:
+- monitoreo_recursos(): reune métricas y genera un reporte completo que se guarda
+  usando utils.guardado_archivos.GuardadoArchivos.reporte().
+"""
 import psutil
 import platform
 import os
